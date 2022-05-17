@@ -43,3 +43,5 @@ process.once('SIGTERM', () => {
 }); 
 
 require('./collect');
+require('./sale');
+require('./admin');

@@ -1,0 +1,9 @@
+.ourclients-afterwrap{
+    padding-top: 60px;
+    img{
+        width: 100%;
+    }
+    @media only screen and (max-width: 1120px){
+        padding-top: 35px;
+    }
+}

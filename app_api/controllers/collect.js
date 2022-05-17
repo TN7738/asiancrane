@@ -23,13 +23,13 @@ const collectListAll = (req, res) => {
 };
 
 const collectListCreate = (req, res) => {
-    console.log(req)
     collect
         .create({
             name: req.body.name,
             email: req.body.email,
             number: req.body.number,
-            details: req.body.details
+            details: req.body.details,
+            readFlag: false
         }, (err, collectdata) => {
             if (err) {
                 sendJSONResponse(res, 400, err);
@@ -77,7 +77,8 @@ const collectListUpdateOne = (req, res) => {
             collectdata.name = req.body.name;
             collectdata.email = req.body.email;
             collectdata.number = req.body.number;
-            collectdata.details = req.body.details
+            collectdata.details = req.body.details;
+            collectdata.readFlag = req.body.readFlag;
             collectdata.save((err, collectdata) => {
                 if (err) {
                     sendJSONResponse(res, 400, err);

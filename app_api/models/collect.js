@@ -16,6 +16,10 @@ const collectSchema = new mongoose.Schema({
     details: {
         type: String,
         required: true
+    },
+    readFlag: {
+        type: Boolean,
+        required: true
     }
 });
 
