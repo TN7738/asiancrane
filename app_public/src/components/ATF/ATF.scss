@@ -1,45 +1,68 @@
 .atf-wrap{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
     z-index: 1;
     padding: 0 15px;
     height: calc(100vh - 173px);
-    min-height: 440px;
+    min-height: 640px;
+    overflow: hidden;
     h1{
         font-size: 60px;
         font-weight: 700;
         color: #fff;
         text-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
-    }
-    h2{
-        font-size: 20px;
-        font-weight: 600;
-        color: #fff;
-        padding: 75px 0 30px;
-        text-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
         text-align: center;
-        max-width: 620px;
+        padding-top: 200px;
     }
-    .cta{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #2098D1;
-        transition: all 450ms;
-        color: #fff;
-        width: 180px;
-        height: 50px;
-        font-size: 16px;
-        font-weight: 700;
+    &.sticky-head-actvted{
+        h1{
+            padding-top: 350px;
+        }
     }
-    .cta:hover{
-        color: #333;
-        background: #fff;
+    .slider-wrap{
+        .swiper{
+            padding-bottom: 80px;
+            .slider-innerwrap{
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-flow: column;
+                h2{
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    padding: 75px 0 30px;
+                    text-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
+                    text-align: center;
+                    max-width: 620px;
+                }
+                .cta{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: #2098D1;
+                    transition: all 450ms;
+                    color: #fff;
+                    width: 180px;
+                    height: 50px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    box-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
+                    border-radius: 7px;
+                }
+                .cta:hover{
+                    color: #333;
+                    background: #fff;
+                }
+            }
+            .swiper-pagination{
+                bottom: 0;
+            }
+        }
     }
-}
-#header.sticky~.atf-wrap{
-    margin-top: 187px;
+    @media only screen and (max-width: 1120px){
+        height: auto;
+        min-height: auto;
+    }
 }

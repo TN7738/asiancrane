@@ -1,0 +1,41 @@
+.admin-header-wrap{
+    padding: 15px 0;
+    background: #1d6283;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .grid{
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .inner-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            display: flex;
+            align-items: center;
+            li{
+                &:first-child{
+                    margin-right: 20px;
+                }
+                a{
+                    transition: all 450ms;
+                    cursor: pointer;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: #fff;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+}

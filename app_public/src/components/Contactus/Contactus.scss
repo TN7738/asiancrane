@@ -1,93 +1,152 @@
 .contactus-wrap{
-    h5 {
-        color: #3a3a3a;
-        font-size: 25px;
-        text-align: center;
-        padding-top: 40px;
+    padding-top: 60px;
+    .map-wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 550px;
+        .left-wrap{
+            width: 100%;
+            max-width: 700px;
+            height: 100%;
+        }
+        .right-wrap{
+            h5{
+                color: #3a3a3a;
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .loc-txt{
+                font-size: 16px;
+                color: #3a3a3a;
+                padding: 15px 0;
+                max-width: 230px;
+            }
+            p{
+                font-weight: 600;
+            }
+        }
     }
-    h6{
-        color: #545454;
-        font-size: 30px;
-        font-weight: 600;
-        margin: 0 auto;
-        max-width: 700px;
-        padding: 50px 0 15px;
-    }
-    form{
-        background: #e7e5e5;
-        border-radius: 5px;
-        margin: 0 auto;
-        max-width: 700px;
-        padding: 20px;
-        width: 100%;
-        p{
-            color: #333;
-            font-size: 14px;
-            &:first-of-type{
-                align-items: flex-start;
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 20px;
-                label {
-                    width: 32%;
-                    input {
-                        border: none;
-                        border-radius: 5px;
-                        height: 40px;
-                        outline: none;
-                        padding: 0 12px;
-                        width: 100%;
-                        &[type=number]{
-                            &::-webkit-inner-spin-button {
-                                -webkit-appearance: none;
+    .contact-wrap{
+        h5 {
+            color: #3a3a3a;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 100px;
+        }
+        h6{
+            color: #545454;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 50px 0 15px;
+        }
+        form{
+            background: #e7e5e5;
+            border-radius: 5px;
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 20px;
+            width: 100%;
+            p{
+                color: #333;
+                font-size: 14px;
+                &:first-of-type{
+                    align-items: flex-start;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    label {
+                        width: 32%;
+                        input {
+                            border: none;
+                            border-radius: 5px;
+                            height: 40px;
+                            outline: none;
+                            padding: 0 12px;
+                            width: 100%;
+                            &[type=number]{
+                                &::-webkit-inner-spin-button {
+                                    -webkit-appearance: none;
+                                }
                             }
                         }
                     }
                 }
-            }
-            textarea {
-                border: none;
-                border-radius: 5px;
-                height: 70px;
-                margin-top: 6px;
-                max-height: 70px;
-                max-width: 100%;
-                min-width: 100%;
-                outline: none;
-                padding: 5px 3px;
-            }
-            &:last-of-type {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                margin-top: 20px;
-                input {
-                    background: #303030;
+                textarea {
                     border: none;
                     border-radius: 5px;
-                    color: #fff;
-                    cursor: pointer;
-                    font-size: 14px;
-                    height: 40px;
+                    height: 70px;
+                    margin-top: 6px;
+                    max-height: 70px;
+                    max-width: 100%;
+                    min-width: 100%;
                     outline: none;
-                    text-transform: uppercase;
-                    transition: all .45s;
-                    width: 100px;
+                    padding: 5px 3px;
+                }
+                &:last-of-type {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    input {
+                        background: #303030;
+                        border: none;
+                        border-radius: 5px;
+                        color: #fff;
+                        cursor: pointer;
+                        font-size: 14px;
+                        height: 40px;
+                        outline: none;
+                        text-transform: uppercase;
+                        transition: all .45s;
+                        width: 100px;
+                    }
+                }
+            }
+            &~p{
+                color: #545454;
+                opacity: 0;
+                padding: 20px 0;
+                text-align: center;
+                transition: all .45s;
+                &.err{
+                    color: #ef2121;
+                    opacity: 1;
+                }
+                &.success{
+                    opacity: 1;
                 }
             }
         }
-        &~p{
-            color: #545454;
-            opacity: 0;
-            padding: 20px 0;
-            text-align: center;
-            transition: all .45s;
-            &.err{
-                color: #ef2121;
-                opacity: 1;
+    }
+    @media only screen and (max-width: 1120px){
+        padding-top: 35px;
+        .map-wrap{
+            flex-flow: column-reverse;
+            height: 640px;
+            .right-wrap{
+                padding-bottom: 30px;
+                text-align: center;
+                .loc-txt{
+                    max-width: 290px;
+                }
             }
-            &.success{
-                opacity: 1;
+        }
+        .contact-wrap{
+            form{
+                p{
+                    &:first-of-type{
+                        flex-flow: column;
+                        label{
+                            width: 100%;
+                            &:nth-of-type(2){
+                                padding: 10px 0;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
