@@ -45,7 +45,7 @@ const EditSale = () => {
     };
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/salelist/" + id)
+        axios.get("/api/salelist/" + id)
             .then(res => {
                 setData(res.data);
                 setName(res.data.name);
@@ -59,7 +59,7 @@ const EditSale = () => {
     }, []);
 
     const deleteSale = id => {
-        axios.delete("http://localhost:3000/api/salelist/" + id)
+        axios.delete("/api/salelist/" + id)
             .then(res => {
                 history.push("/admin/salesdata");
             })
@@ -72,7 +72,7 @@ const EditSale = () => {
             price: price,
             list: list.concat(inputFields)
         };
-        axios.put("http://localhost:3000/api/salelist/" + id, saleData)
+        axios.put("/api/salelist/" + id, saleData)
             .then(res => {
                 const { status } = res;
                 if(status === 200){

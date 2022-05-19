@@ -21,6 +21,7 @@
                 font-weight: 700;
                 font-size: 20px;
                 color: #333;
+                padding-right: 15px;
             }
             .price{
                 font-size: 14px;
@@ -56,26 +57,24 @@
                     background: #1d3557;
                     max-height: 52.4px;
                 }
-                // &:nth-of-type(odd){
-                //     .prop{
-                //         background: #457b9d;
-                //     }
-                //     .value{
-                //         background: #1d3557;
-                //     }
-                // }
-                // &:nth-of-type(even){
-                //     .prop{
-                //         background: #1d3557;
-                //     }
-                //     .value{
-                //         background: #457b9d;
-                //     }
-                // }
             }
         }
     }
     @media only screen and (max-width: 1120px){
         padding-top: 35px;
+        .sale-wrap{
+            .details-wrap{
+                .detail-inner-wrap{
+                    flex-flow: column;
+                    margin-top: 7px;
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+                    .prop, .value{
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }

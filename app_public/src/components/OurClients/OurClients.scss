@@ -1,7 +1,25 @@
 .ourclients-afterwrap{
     padding-top: 60px;
-    img{
+    .logo-wrap{
         width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 100%;
+            display: block;
+            margin: 30px auto 0;
+            max-width: 260px;
+            &:first-of-type{
+                margin-top: 0;
+            }
+            &:nth-of-type(2), &:nth-of-type(5){
+                height: 150px;
+                width: auto;
+            }
+        }
     }
     @media only screen and (max-width: 1120px){
         padding-top: 35px;

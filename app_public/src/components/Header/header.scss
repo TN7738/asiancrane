@@ -2,7 +2,8 @@
     position: relative;
     height: 86vh;
     min-height: 597px;
-    background: #000 url('../../../public/images/main-bg.jpg') center / cover fixed no-repeat;
+    background: #000 url('../../../public/images/main-bg1.jpg') center / cover fixed no-repeat;
+    transition: all 450ms;
     &:after{
         content: '';
         position: absolute;
@@ -126,6 +127,9 @@
         }
     }
     @media only screen and (max-width: 1120px){
+        height: auto;
+        min-height: auto;
+        padding-bottom: 50px;
         header{
             position: fixed;
             width: 100%;

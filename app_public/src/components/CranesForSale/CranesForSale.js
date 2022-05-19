@@ -6,7 +6,7 @@ const CranesForSale = () => {
     const [sales, setSales] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/salelist")
+        axios.get("/api/salelist")
             .then(res => {
                 setSales(res.data);
             })

@@ -40,7 +40,7 @@ const CreateSale = () => {
             price: price,
             list: inputFields
         };
-        axios.post("http://localhost:3000/api/salelist/", saleData)
+        axios.post("/api/salelist/", saleData)
             .then(res => {
                 history.push("/admin/salesdata");
             })

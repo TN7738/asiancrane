@@ -11,7 +11,7 @@ const Userdata = () => {
     }
     const [enquiries, setEnquiries] = useState(null);
     React.useEffect(() => {
-        axios.get("http://localhost:3000/api/collectlist")
+        axios.get("/api/collectlist")
             .then(res => {
                 setEnquiries(res.data);
             })
@@ -22,9 +22,9 @@ const Userdata = () => {
 
     const deleteEnquiry = (e) => {
         const enqId = e.target.getAttribute('data-attr');
-        axios.delete(`http://localhost:3000/api/collectlist/${enqId}`)
+        axios.delete(`/api/collectlist/${enqId}`)
             .then(res => {
-                axios.get("http://localhost:3000/api/collectlist")
+                axios.get("/api/collectlist")
                     .then(res => {
                         setEnquiries(res.data);
                     })
@@ -43,9 +43,9 @@ const Userdata = () => {
             details: el.details,
             readFlag: !el.readFlag
         };
-        axios.put(`http://localhost:3000/api/collectlist/${enqId}`, usrData)
+        axios.put(`/api/collectlist/${enqId}`, usrData)
             .then(res => {
-                axios.get("http://localhost:3000/api/collectlist")
+                axios.get("/api/collectlist")
                     .then(res => {
                         setEnquiries(res.data);
                     })

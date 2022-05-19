@@ -27,7 +27,7 @@ const Contactus = () => {
             details: details
         };
 
-        axios.get('http://localhost:3000/api/collectlist')
+        axios.get('/api/collectlist')
             .then(res => {
                 const found = res.data.some(el => el.email === userData.email);
                 if(found){
@@ -36,7 +36,7 @@ const Contactus = () => {
                     resetData();
                 }
                 else{
-                    axios.post('http://localhost:3000/api/collectlist', userData)
+                    axios.post('/api/collectlist', userData)
                         .then(res => {
                             setMessage("Thank you! We'll contact you shortly.");
                             setMessageClass("success");

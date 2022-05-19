@@ -12,7 +12,7 @@ const Salesdata = () => {
     const [sales, setSales] = useState([]);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/api/salelist")
+        axios.get("/api/salelist")
             .then(res => {
                 setSales(res.data);
             })
@@ -22,7 +22,7 @@ const Salesdata = () => {
     }, []);
 
     const deleteSale = id => {
-        axios.delete("http://localhost:3000/api/salelist/" + id)
+        axios.delete("/api/salelist/" + id)
             .then(res => {
                 let { status } = res;
                 console.log(status);

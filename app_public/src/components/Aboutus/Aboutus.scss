@@ -28,7 +28,7 @@
             position: absolute;
             height: 300px;
             width: 430px;
-            left: 0;
+            left: 15px;
             top: 50%;
             transform: translateY(-50%);
             &:after{
@@ -60,7 +60,7 @@
         .about{
             .img-wrap{
                 left: auto;
-                right: 0;
+                right: 15px;
                 &:after{
                     background-color: transparent;
                     background-image: linear-gradient(135deg, #0B212B 0%, #1D394B 100%);
@@ -70,6 +70,39 @@
             p{
                 padding-left: 0;
                 padding-right: 350px;
+            }
+        }
+    }
+    @media only screen and (max-width: 1120px){
+        .about{
+            flex-flow: column;
+            .img-wrap{
+                position: relative;
+                left: auto;
+                top: auto;
+                transform: none;
+                width: 100%;
+                max-width: 430px;
+                &:after{
+                    display: none;
+                }
+            }
+            p{
+                padding: 40px 0 0;
+                width: 100%;
+                max-width: 700px;
+                text-align: center;
+            }
+        }
+        &:nth-child(even){
+            .about{
+                flex-flow: column-reverse;
+                .img-wrap{
+                    right: auto;
+                }
+                p{
+                    padding-right: 0;
+                }
             }
         }
     }

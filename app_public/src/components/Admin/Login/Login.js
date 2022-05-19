@@ -19,7 +19,7 @@ const Login = () => {
             password: password
         };
 
-        axios.get('http://localhost:3000/api/adminlist')
+        axios.get('/api/adminlist')
             .then(res => {
                 let foundFlag = false;
                 res.data.forEach(elem => {

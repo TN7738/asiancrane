@@ -23,6 +23,8 @@
                 color: #fff;
                 text-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
                 z-index: 1;
+                padding: 0 15px;
+                text-align: center;
             }
             &:after{
                 content: '';
@@ -65,7 +67,7 @@
                 font-size: 55px;
                 font-weight: 700;
                 color: #fff;
-                text-shadow: 1px 1px 4px rgb(0 0 0 / 54%);
+                text-shadow: 1px 6px 4px rgb(0 0 0 / 54%);
                 z-index: 1;
                 text-align: center;
             }
@@ -81,5 +83,26 @@
     }
     @media only screen and (max-width: 1120px){
         padding-top: 35px;
+        .img-afterwrap{
+            .img-wrap{
+                height: 37vh;
+            }
+            .img2-wrap{
+                height: 900px;
+                flex-flow: column;
+                .left-wrap{
+                    width: 100%;
+                    .top-wrap, .bottom-wrap{
+                        height: 300px;
+                    }
+                    .bottom-wrap{
+                        background-position: 0 -160px;
+                    }
+                }
+                .right-wrap{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
