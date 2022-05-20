@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.43530052.css",
+    "main.css": "/static/css/main.74b04b64.css",
     "main.js": "/static/js/main.b3b79a05.js",
     "static/js/787.613218e8.chunk.js": "/static/js/787.613218e8.chunk.js",
     "static/media/erection-service.jpg": "/static/media/erection-service.f4550226dfbcd2a2f318.jpg",
@@ -11,12 +11,12 @@
     "static/media/title-bg.jpg": "/static/media/title-bg.152db6f6cbb64a0f2554.jpg",
     "static/media/lifting-shifting-service.jpg": "/static/media/lifting-shifting-service.2fcb73978e18279ea33c.jpg",
     "index.html": "/index.html",
-    "main.43530052.css.map": "/static/css/main.43530052.css.map",
+    "main.74b04b64.css.map": "/static/css/main.74b04b64.css.map",
     "main.b3b79a05.js.map": "/static/js/main.b3b79a05.js.map",
     "787.613218e8.chunk.js.map": "/static/js/787.613218e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.43530052.css",
+    "static/css/main.74b04b64.css",
     "static/js/main.b3b79a05.js"
   ]
 }
