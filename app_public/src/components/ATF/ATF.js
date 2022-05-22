@@ -12,9 +12,9 @@ const ATF = () => {
     SwiperCore.use([Autoplay]);
 
     const [imgCount, setImgCount] = useState(1);
-    const [imgPath, setImgPath] = useState("/images/main-bg1.jpg");
+    const [imgPath, setImgPath] = useState("/images/main-bg-1.jpg");
 
-    const images = "/images/main-bg";
+    const images = "/images/main-bg-";
 
     useEffect(() => {
         const interval = setInterval(() => {

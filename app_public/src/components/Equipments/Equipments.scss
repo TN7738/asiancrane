@@ -48,11 +48,11 @@
     .equipments-wrap{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         margin: 0 auto;
     }
     .equipments{
-        margin: 0 0 15px 15px;
+        margin: 0 0 15px 0;
         border: solid 1px #e6e2e2;
         padding: 10px;
         border-radius: 3px;
