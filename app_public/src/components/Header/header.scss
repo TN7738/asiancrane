@@ -3,6 +3,9 @@
     height: 86vh;
     min-height: 780px;
     background: #000 url('../../../public/images/main-bg-1.jpg') center / cover fixed no-repeat;
+    &.saf-fix{
+        background-attachment: scroll;
+    }
     transition: all 450ms;
     &:after{
         content: '';

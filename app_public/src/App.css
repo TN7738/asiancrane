@@ -19,6 +19,9 @@ body{
     text-align: center;
     margin: 30px 0;
 }
+.banner.saf-fix{
+    background-attachment: scroll;
+}
 
 /* Custom Scroll Bar Starts */
 ::-webkit-scrollbar {
