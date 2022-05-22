@@ -64,15 +64,19 @@
                 }
             }
         });
-        const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
-        const isNotAdmin = !!document.querySelector(".top-sec");
-        if(isSafari && isNotAdmin){
-            document.querySelector(".top-sec").classList.add("saf-fix");
-            document.querySelectorAll(".banner").forEach(elem => {
-                elem.classList.add("saf-fix");
-            });
-        }
         /*Sticky header code ends*/
+        /* Safari Fix */
+        window.addEventListener('load', (event) => {
+            const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+            const isNotAdmin = !!document.querySelector(".top-sec");
+            if(isSafari && isNotAdmin){
+                document.querySelector(".top-sec").classList.add("saf-fix");
+                document.querySelectorAll(".banner").forEach(elem => {
+                    elem.classList.add("saf-fix");
+                });
+            }
+        });
+        /* Safari Fix */
     </script>
 </body>
 </html>
