@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce38ed47.css",
+    "main.js": "/static/js/main.6b71a6cf.js",
+    "static/js/787.613218e8.chunk.js": "/static/js/787.613218e8.chunk.js",
+    "static/media/erection-service.jpg": "/static/media/erection-service.f4550226dfbcd2a2f318.jpg",
+    "static/media/boom-lift-service.jpg": "/static/media/boom-lift-service.0be29e32f9c688a83c1c.jpg",
+    "static/media/pipeline-service.jpg": "/static/media/pipeline-service.54a422968c3bb28843df.jpg",
+    "static/media/loading-unloading-service.jpg": "/static/media/loading-unloading-service.3a2afbed0427647e5ceb.jpg",
+    "static/media/title-bg.jpg": "/static/media/title-bg.152db6f6cbb64a0f2554.jpg",
+    "static/media/main-bg-1.jpg": "/static/media/main-bg-1.4e03d210c66bfb4c8e1c.jpg",
+    "static/media/lifting-shifting-service.jpg": "/static/media/lifting-shifting-service.2fcb73978e18279ea33c.jpg",
+    "index.html": "/index.html",
+    "main.ce38ed47.css.map": "/static/css/main.ce38ed47.css.map",
+    "main.6b71a6cf.js.map": "/static/js/main.6b71a6cf.js.map",
+    "787.613218e8.chunk.js.map": "/static/js/787.613218e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce38ed47.css",
+    "static/js/main.6b71a6cf.js"
+  ]
+}
